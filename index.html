@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Bio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<header>
+    <h1>Online Restaurant Ordering System</h1>
+    <h3>Developed by Avery, Philip, and Ryan</h3>
+    <!-- Example team logo -->
+    <img src="img/MENUFORGE.png" alt="Team Logo" class="team-logo">
+
+    <!-- Navigation menu to switch between sections -->
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
+</header>
+
+<!-- Team bios section (default section) -->
+<div id="bios" class="container">
+    <!-- Each card represents an individual team member -->
+    <div class="card">
+        <h2>Philip</h2>
+        <p>Frontend Developer</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <p id="bio1" class="bio">Philip is a frontend developer with experience in HTML, CSS, and FastAPI. He also has experience in Java, Python, and even enjoys game development inside GameMaker.</p>
+        <img src="img/Philip.jpg" alt="Philip" class="profile-pic">
+        <div class="moodboard">
+            <img src="img/HTML.png" alt="HTML Logo" class="moodboard-logo">
+            <img src="img/Java.png" alt="Java Logo" class="moodboard-logo">
+            <img src="img/GameMaker.png" alt="GameMaker Logo" class="moodboard-logo">
+        </div>
+    </div>
+
+
+    <div class="card">
+        <h2>Ryan Kubetz</h2>
+        <p>Robotics Developer</p>
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <p id="bio2" class="bio">Ryan is a robotics developer specializing in algorithm integration, AI, and processing
+            sensor data to control robot functionality. He has experience in areas such as: Java, Python, C++, C,
+            Assembly, SQL, Arduino Microcontroller Development, CAD, and 3D Printing.</p>
+        <img src="img/ryan_kubetz.png" alt="Ryan Kubetz" class="profile-pic">
+        <div class="moodboard">
+            <img src="img/arduino_logo.jpeg" alt="Arduino Logo" class="moodboard-logo">
+            <img src="img/bambulab_logo.png" alt="Bambu Lab Logo" class="moodboard-logo">
+            <img src="img/fusion360_logo.jpg" alt="Fusion360 Logo" class="moodboard-logo">
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Avery Holsinger</h2>
+        <p>Game Developer</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <p id="bio3" class="bio">Avery is a game developer with most experience in GameMaker. He is also experienced in multiple languages, including Java, Python, C, and C++, and Assembly.</p>
+        <img src="img/avery_profile.png" alt="Avery Holsinger" class="profile-pic">
+        <div class="moodboard">
+            <img src="img/itch_io.png" alt="HTML Logo" class="moodboard-logo">
+            <img src="img/python.png" alt="Java Logo" class="moodboard-logo">
+            <img src="img/C.png" alt="GameMaker Logo" class="moodboard-logo">
+        </div>
+    </div>
+</div>
+<!-- Team vision/mission statement section (hidden by default) -->
+<div id="vision" class="container" style="display: none;">
+    <h2>Our Mission Statement</h2>
+    <p>Our mission is to collaborate as a team of computer science students
+to design efficient, scalable, and user-friendly software solutions.
+We aim to apply strong engineering principles while continuously learning
+and improving through teamwork and problem-solving.</p>
+    <h2>Project Overview</h2>
+    <p>
+Our team developed an Online Restaurant Ordering System (OROS)
+API that allows customers to place orders without creating an account.
+The system supports menu browsing, order tracking, and promotional codes.
+</p>
+
+<h3>Key Features</h3>
+<ul>
+    <li>Create, update, and delete menu items</li>
+    <li>Place orders as a guest</li>
+    <li>Track order status</li>
+    <li>Apply promotional codes</li>
+    <li>View revenue and order data</li>
+</ul>
+
+<h3>Team Rules</h3>
+<ul>
+    <li>Communicate frequently</li>
+    <li>Meet sprint deadlines</li>
+    <li>Contribute equally to GitHub</li>
+</ul>
+</div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>
